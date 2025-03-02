@@ -1,0 +1,15 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+sc-static.net	TRUE	/scevent.min.js	FALSE	1999999999	X-AB	58715f46b4f141b39d96c2611de4b37b
+bradley.edu	TRUE	/	FALSE	1999999999	JSESSIONID	EAA75088818B4AB92BBB367464A6FE81
+bradley.edu	TRUE	/	FALSE	1999999999	opvc	ebbbda82-59e8-42f2-bf7e-cce226bef18a
+bradley.edu	TRUE	/	FALSE	1999999999	sitevisitscookie	1
+bradley.edu	TRUE	/	FALSE	1999999999	dmid	3fe4fcd7-ad9c-4e6f-b906-4664aca5a860
+www.bradley.edu	TRUE	/	FALSE	1999999999	AWSALB	z40riXTM//Z+jqbDm37R4MzarNAfFnX/ikPHHy/h+B0CcxnDGCa4UWmkSfSTI8khg5bJv42nhE6aP/v2NwyrCubzETeTB6qGT4c+NX4w5jmOiMbobESmAMbg38yh
+www.bradley.edu	TRUE	/	FALSE	1999999999	AWSALBCORS	z40riXTM//Z+jqbDm37R4MzarNAfFnX/ikPHHy/h+B0CcxnDGCa4UWmkSfSTI8khg5bJv42nhE6aP/v2NwyrCubzETeTB6qGT4c+NX4w5jmOiMbobESmAMbg38yh
+www.bradley.edu	TRUE	/	FALSE	1999999999	SameSite	None
+sc-static.net	TRUE	/	FALSE	1999999999	SameSite	None
+bradley.edu	TRUE	/	FALSE	1999999999	AWSALB	1YsX0QQpchT3ZlU5w7owpBX5J38oyeMW0MbE9i5GwNUCgSO1TbaS0Oe3WgFgxJlnR5rVjqym0MH1JgH2pLTs2/xEN7Cjk/dQnKYgkpo9Y2rNQI5aRgfwxsZnxTZz
+bradley.edu	TRUE	/	FALSE	1999999999	AWSALBCORS	1YsX0QQpchT3ZlU5w7owpBX5J38oyeMW0MbE9i5GwNUCgSO1TbaS0Oe3WgFgxJlnR5rVjqym0MH1JgH2pLTs2/xEN7Cjk/dQnKYgkpo9Y2rNQI5aRgfwxsZnxTZz
+bradley.edu	TRUE	/	FALSE	1999999999	SameSite	None
+
