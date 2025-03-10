@@ -1,11 +1,30 @@
 .bg-container 
 {
+    display: flex;
     background: url(https://images.unsplash.com/photo-1571113390215-0cdbbd0d0134?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .overlay-container 
 {
-    background-color: hsla(0, 2%, 92%, 0.74);
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.bold 
+{
+    font-weight: bolder;
+}
+
+.accordion-span 
+{
+    font-weight: normal;
+}
+
+.accordion-button 
+{
+    font-size: 2rem;
 }
