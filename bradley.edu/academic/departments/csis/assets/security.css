@@ -5210,20 +5210,24 @@ td.visible-print, th.visible-print {
 }
 }
 
-td, tr, th{
-    border: 1px solid black;
-    padding: 1.15px;
+th{
+    text-align: center;
+    line-height: 17px;
 }
-.background {
-    width: 100vw;
-    height: 100vh;
-    background-image: url('https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/Bradley_University_Summer_02.jpg');
+td, tr{
+    padding: 2.5px;
+    text-align: center;
+}
+.background{
+    width: auto;
+    height: auto;
+    background-image: url('/bradley.edu/academic/departments/csis/assets/img/security_bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .overlay{
-    background-color: rgba(204, 204, 204, .9) ;
+    background-color: rgba(204, 204, 204, .92) ;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
