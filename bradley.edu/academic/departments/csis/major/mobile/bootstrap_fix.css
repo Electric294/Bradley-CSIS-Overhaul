@@ -1,0 +1,28 @@
+.nav 
+{
+    flex-direction: row;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1150px;
+}
+
+.navbar > .container 
+{
+    flex-wrap: nowrap;
+}
+
+.secondary-nav .navbar 
+{
+    display: block;
+}
+
+.navbar-nav .dropdown-menu 
+{
+    position:absolute;
+    font-size: 16px;
+}
+.dropdown-menu a 
+{
+    text-decoration: none;
+}

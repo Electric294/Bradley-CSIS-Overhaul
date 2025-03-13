@@ -1,0 +1,59 @@
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 2px solid black; /* Black borders */
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #a50000; /* Red background for headers */
+    color: white; /* White text for headers */
+}
+td {
+    background-color: white; /* White background for data cells */
+    color: black; /* Black text for data cells */
+}
+tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+/* Accordion CSS */
+.accordion {
+	--bs-accordion-btn-color: white;
+	--bs-accordion-btn-bg: #a50000;
+    --bs-accordion-active-color: white;
+	--bs-accordion-active-bg: rgb(228, 39, 68);
+}
+
+.accordion-span 
+{
+    font-weight: normal;
+}
+
+.accordion-button 
+{
+    font-size: 2rem;
+}
+
+/* Background image CSS */
+.bg{
+    background: url(https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/Bradley_University_Summer_09.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.overlay 
+{
+    background-color: white;
+    padding: 10px;
+}
+
+
