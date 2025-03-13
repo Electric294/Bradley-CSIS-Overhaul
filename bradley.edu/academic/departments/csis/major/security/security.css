@@ -5210,18 +5210,31 @@ td.visible-print, th.visible-print {
 }
 }
 
-th{
-    text-align: center;
-    line-height: 17px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
 }
-td, tr{
-    padding: 2.5px;
+th, td {
+    border: 2px solid black; 
+    padding: 8px;
     text-align: center;
+}
+th {
+    background-color: #a50000; 
+    color: white; 
+}
+td {
+    background-color: white; 
+    color: black; 
+}
+tr:nth-child(even) td {
+    background-color: #f2f2f2; 
 }
 .background{
     width: auto;
     height: auto;
-    background-image: url('/bradley.edu/academic/departments/csis/assets/img/security_bg.png');
+    background-image: url('security_bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
