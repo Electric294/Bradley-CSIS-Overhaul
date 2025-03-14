@@ -28,3 +28,37 @@
 {
     font-size: 2rem;
 }
+
+.accordion-button.collapsed 
+{
+    margin-bottom: 5px;
+}
+
+.accordion-button 
+{
+    background-color: #a50000;
+    color:white;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 2px solid black; 
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #a50000; 
+    color: white; 
+}
+td {
+    background-color: white; 
+    color: black; 
+}
+tr:nth-child(even) td {
+    background-color: #f2f2f2; 
+}
