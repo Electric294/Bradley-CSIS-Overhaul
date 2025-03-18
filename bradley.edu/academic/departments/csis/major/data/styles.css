@@ -3,6 +3,19 @@
     flex-direction: row;
 }
 
+.nav-justified{
+    display: flex !important;
+    justify-content: space-around !important;
+    width: 100% !important;
+}
+
+.nav-justified li {
+    flex-grow: 1 !important;
+    text-align: center;
+    white-space: nowrap; /* Prevents wrapping */
+    min-width: 120px; /* Adjust based on your layout */
+}
+
 .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1150px;
 }
