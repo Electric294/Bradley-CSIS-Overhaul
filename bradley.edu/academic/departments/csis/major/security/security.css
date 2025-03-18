@@ -5244,3 +5244,7 @@ tr:nth-child(even) td {
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */
+
+.list-unstyled li::before {
+    content: none !important; /* Removes any unwanted pseudo-element */
+}
