@@ -1,0 +1,55 @@
+.nav 
+{
+    flex-direction: row;
+}
+
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1150px;
+}
+
+.navbar > .container 
+{
+    flex-wrap: nowrap;
+}
+
+
+.secondary-nav .navbar 
+{
+    display: block;
+}
+
+.navbar-nav .dropdown-menu 
+{
+    position:absolute;
+    font-size: 16px;
+}
+.dropdown-menu a 
+{
+    text-decoration: none;
+}
+
+body {
+    background-color: #f8f9fa; /* Light gray background for better contrast */
+}
+
+.container {
+    max-width: fit-content; /* Adjust the width of the container */
+    margin: auto; /* Center the content */
+}
+    
+.accordion {
+    width: 100%; 
+}
+    
+.accordion-button,
+.accordion-button:not(.collapsed) {
+    background-color: red !important;
+    color: white !important;
+    font-size: 1.25rem !important;
+    font-weight: bold !important;
+}
+    
+.accordion-button:hover {
+    background-color: rgb(200, 0, 0) !important;
+}
+    
