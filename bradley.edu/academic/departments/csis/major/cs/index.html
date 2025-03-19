@@ -25,6 +25,49 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+<style>
+    .list-unstyled li::before {
+        content: none !important; /* Removes any unwanted pseudo-element */
+    }
+    .nav-justified{
+        display: flex !important;
+        justify-content: space-around !important;
+        width: 100% !important;
+    }
+
+    .nav-justified li {
+        flex-grow: 1 !important;
+        text-align: center;
+        white-space: nowrap; /* Prevents wrapping */
+        min-width: 120px; /* Adjust based on your layout */
+    }
+/* Remove extra whitespace above the Major section */
+#main-content {
+    margin-top: 0 !important;   /* Eliminate unnecessary margin */
+    padding-top: 0 !important;  /* Eliminate unnecessary padding */
+}
+
+/* Ensure row alignment with no extra padding */
+.row {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Adjust section container spacing */
+.container {
+    margin: 0 auto !important;   /* Center the content without extra margin */
+    padding: 0 !important;       /* Remove padding that may cause spacing */
+}
+
+/* Fix any potential z-index issues causing overlap */
+#main-content {
+    position: relative;
+    z-index: 1;
+}
+
+
+</style>
+
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
 
@@ -658,7 +701,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </button>
                     
                                     
-                                                          <a class="navbar-brand" href="https://bradley.edu/academic/departments/csis"><span class="glyphicon glyphicon-home icons-padding"></span> <span class="text-uppercase secondary-nav-title">Computer Science and Information Systems</span></a>
+                                                          <a class="navbar-brand" href="https://bradley.edu/academic/departments/csis"><i class="fas fa-home icons-padding"></i> <span class="text-uppercase secondary-nav-title">Computer Science and Information Systems</span></a>
                                                                                                                                                                                 
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -666,7 +709,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         
 
 <ul class="nav navbar-nav">
-          <li class="dropdown"><a href='../index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Major <span class="caret"></span></a>
+          <li class="dropdown"><a href='../index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Major</a>
         <ul class="dropdown-menu">
                       <li><a href='index.html'  >Computer Science</a></li>
                       <li><a href='../cis/index.html'  >Computer Information Systems</a></li>
@@ -676,14 +719,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <li><a href='../security/index.html'  >Concentration In Software, Web, And Computer Security</a></li>
                   </ul>
     </li>
-              <li class="dropdown"><a href='../../minor/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Minor <span class="caret"></span></a>
+              <li class="dropdown"><a href='../../minor/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Minor</a>
         <ul class="dropdown-menu">
                       <li><a href='../../minor/cgt/index.html'  >Computer Game Technology</a></li>
                       <li><a href='../../minor/csis/index.html'  >Computer Science and Information Systems</a></li>
                       <li><a href='../../minor/ds/index.html'  >Data Science</a></li>
                   </ul>
     </li>
-              <li class="dropdown"><a href='../../gradprograms/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Graduate Programs <span class="caret"></span></a>
+              <li class="dropdown"><a href='../../gradprograms/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Graduate Programs</a>
         <ul class="dropdown-menu">
                       <li><a href='../../gradprograms/cs/index.html'  >Masters In Computer Science</a></li>
                       <li><a href='https://info.online.bradley.edu/ms-in-cs-programs/computational-data-science-certificate'  target="_blank"  >Certificate in Computational Data Science (Online)</a></li>
@@ -736,7 +779,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="row-color-bWhite row-padding-below-breadcrumbs background">
         <div class="container top-content">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" style="margin: 15px">
                     
 
                     <h1 class="text-uppercase">Computer Science</h1>
@@ -758,18 +801,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <h1 class="text-uppercase">Making your Mark</h1>
 <p>Computer science majors are valuable in many business, financial or technical settings. Recent graduates have found jobs at Epic Systems, Microsoft, the New York Times and Sony. Others have attended graduate school at institutions such as Virginia Tech and Washington University in St. Louis.</p>
 </div>
+<style>
+.fa-icon-link.row {
+    display: inline-flex !important;  /* Ensures horizontal layout */
+    justify-content: space-around;    /* Space between icons */
+    align-items: center;              /* Center align vertically */
+    flex-wrap: nowrap;                /* Prevent wrapping */
+    width: 100%;
+    gap: 20px;                        /* Add some spacing between items */
+}
+
+.fa-icon-link .col-xs-4 {
+    flex: 1;                          /* Make each item take equal space */
+    text-align: center;               /* Center the content */
+}
+</style>
+
 <div class="col-md-5">
-<div class="row fa-icon-link fa-red-icons text-center col-xs-padding-top-40 col-sm-padding-top-50 row-padding-bottom-30">
-    <div class="col-xs-4">
-		<a href="#" data-toggle="modal" data-target=".course-sequence"><i aria-hidden="true" class="fal fa-list-ol fa-3x"></i>Sample Program Plan</a>
-	</div>
-	<div class="col-xs-4">
-		<a href="https://bradley.edu/requestinfo/"><i aria-hidden="true" class="fas fa-info fa-3x"></i>Request Info</a>
-	</div>
-    <div class="col-xs-4">
-		<a href="https://bradley.edu/apply/"><i class="fal fa-file-alt fa-3x" aria-hidden="true"></i>Apply Now</a>
-	</div>
-</div>
+    <div class="row fa-icon-link fa-red-icons text-center col-xs-padding-top-40 col-sm-padding-top-50 row-padding-bottom-30" style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap;">
+        <div class="col-xs-4 text-center">
+            <a href="#" data-toggle="modal" data-target=".course-sequence">
+                <i aria-hidden="true" class="fal fa-list-ol fa-3x"></i><br>Sample Program Plan
+            </a>
+        </div>
+        <div class="col-xs-4 text-center">
+            <a href="https://bradley.edu/requestinfo/">
+                <i aria-hidden="true" class="fas fa-info fa-3x"></i><br>Request Info
+            </a>
+        </div>
+        <div class="col-xs-4 text-center">
+            <a href="https://bradley.edu/apply/">
+                <i class="fal fa-file-alt fa-3x" aria-hidden="true"></i><br>Apply Now
+            </a>
+        </div>
+    </div>
+    
 
 <h2 class="col-md-no-top-margin" style="text-align:center"><br>Major Requirements</h2>
 <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -1333,20 +1399,141 @@ function printElement(elem) {
     </div><!--row-->
     <!--end BASIC PAGE SECTION-->
 </div>
-
+</div>
+</div>
+</div>
 <style>
-    .row-color-charcoal .btn-secondary-outline {
-  color: #fff !important;
-  background-color: #a50000;
-  border-color: #700000;
+#main-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.95);
+    padding-bottom: 0;  /* Remove bottom padding */
 }
-.row-color-charcoal .btn-secondary-outline:hover {
-  color: #a50000 !important;
-  background-color: #f0f0f0;
-  background-image: none;
-  border-color: #700000;
+
+
+
+.footer::after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    z-index: -1;
+    overflow: hidden;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-content {
+    min-height: calc(100vh - <footer height>); /* Ensures the content takes up the remaining space */
+}
+
+.footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    background: #333;
+    color: #fff;
+    box-sizing: border-box;
+    clear: both;
+}
+
 </style>
+
+<!--
+<style>
+/* Reset footer spacing */
+.footer, .footer .container, .footer .row {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure footer spans the entire width */
+.footer {
+    width: 100vw; 
+    margin: 0;
+    padding: 0;
+    clear: both; /* Prevent overlap */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Footer positioning */
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* New styles to expand the footer width over the entire background image */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-content {
+    min-height: calc(100vh - 200px); /* Adjust based on your footer height */
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+    background-color: #333; /* Your desired footer color */
+    color: #fff; /* Footer text color */
+    position: relative;
+    z-index: 2; /* Ensure it stays above the background image */
+}
+
+/* Background image styling */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    z-index: -1; /* Keep the image behind all content */
+}
+
+/* Ensure the footer text and content are properly visible */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #f0a500; /* Hover color */
+}
+
+
+.container {
+    max-width: 100% !important;
+}
+</style>-->
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -1366,39 +1553,39 @@ function printElement(elem) {
             <div class="col-md-2">
                 <h5 class="text-uppercase">Information For</h5>
                 <ul class="list-unstyled">
-                    <li><a href="https://bradley.edu/admissions/">Prospective Students</a></li>
-                    <li><a href="https://bradley.edu/currentstudents/">Current Students</a></li>
-                    <li><a href="https://bradley.edu/facultyorstaff/">Faculty/Staff</a></li>
-                    <li><a href="https://bradley.edu/family/">Parents</a></li>
-                    <li><a href="https://bradley.edu/alumni/">Alumni</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/admissions/"> Prospective Students</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/currentstudents/"> Current Students</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/facultyorstaff/"> Faculty/Staff</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/family/"> Parents</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/alumni/"> Alumni</a></li>
                 </ul>
             </div><!--end footer 1st col-->
             <div class="col-md-2">
                 <h5 class="text-uppercase">Getting Around</h5>
                 <ul class="list-unstyled">
-                    <li><a href="https://bradley.edu/atoz/">A - Z index</a></li>
-                    <li><a href="https://bradley.edu/about/visiting/virtual_tour/">Campus Map</a></li>
-                    <li><a href="https://bradley.edu/parking/">Parking</a></li>
-                    <li><a href="https://bradley.edu/about/visiting/">Visit Information</a></li>
-                    <li><a href="https://www.youvisit.com/#/vte/?data-platform=v&data-inst=60105&data-image-width=100%&data-image-height=100%&" target="_blank">Virtual Tour</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/atoz/"> A - Z index</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/about/visiting/virtual_tour/"> Campus Map</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/parking/"> Parking</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/about/visiting/"> Visit Information</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://www.youvisit.com/#/vte/?data-platform=v&data-inst=60105&data-image-width=100%&data-image-height=100%&" target="_blank"> Virtual Tour</a></li>
                 </ul>
             </div><!--end footer 2nd col-->
             <div class="col-md-2">
                 <h5 class="text-uppercase">Public Safety</h5>
                 <ul class="list-unstyled">
-                    <li><a href="https://bradley.edu/emergency/">Emergency</a></li>
-                    <li><a href="https://bradley.edu/police/">Police Department</a></li>
-                    <li><a href="https://bradley.edu/offices/police/services/">Safety Cruiser</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/emergency/"> Emergency</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/police/"> Police Department</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/offices/police/services/"> Safety Cruiser</a></li>
                 </ul>
             </div><!--end footer 3rd col-->
             <div class="col-md-2">
                 <h5 class="text-uppercase">Campus Tools</h5>
                 <ul class="list-unstyled">
-                    <li><a href="https://mail.bradley.edu/">Bmail</a></li>
-                    <li><a href="https://fsmail.bradley.edu/">FSmail</a></li>
-                    <li><a href="https://learn.bradley.edu/">Canvas</a></li>
-                    <li><a href="https://mybu.bradley.edu/">MyBU</a></li>
-                    <li><a href="https://bradley.edu/directory/">Directory</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://mail.bradley.edu/"> Bmail</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://fsmail.bradley.edu/"> FSmail</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://learn.bradley.edu/"> Canvas</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://mybu.bradley.edu/"> MyBU</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/directory/"> Directory</a></li>
                 </ul>
             </div><!--end footer 4th col-->
             <div class="col-md-4 contact-table">
@@ -1451,7 +1638,7 @@ function printElement(elem) {
     </div><!--row row-color-charcoal-->
     <div class="row-color-charcoal copyright text-center row-padding-sm">
         <div class="container">
-            <p><span aria-hidden="true" class="glyphicon glyphicon-copyright-mark"></span> 2025 Bradley University | <a href="https://bradley.edu/legal/accessibility/">Accessibility</a> | <a href="https://bradley.edu/legal/privacy/">Privacy Policy</a> | <a href="https://bradley.edu/legal/nondiscrimination/">Non-Discrimination Statement</a> | <a href="https://bradley.edu/legal/consumerinfo/">Consumer Information</a> | <a href="https://bradley.edu/legal/complaint-resolution/">Student Complaint Resolution</a> | <a href="https://complaints.ibhe.org/" target="_blank">IBHE Online Complaint System</a></p>
+            <p>&copy; 2025 Bradley University | <a href="https://bradley.edu/legal/accessibility/">Accessibility</a> | <a href="https://bradley.edu/legal/privacy/">Privacy Policy</a> | <a href="https://bradley.edu/legal/nondiscrimination/">Non-Discrimination Statement</a> | <a href="https://bradley.edu/legal/consumerinfo/">Consumer Information</a> | <a href="https://bradley.edu/legal/complaint-resolution/">Student Complaint Resolution</a> | <a href="https://complaints.ibhe.org/" target="_blank">IBHE Online Complaint System</a></p>
         </div>
     </div>
 </footer>
