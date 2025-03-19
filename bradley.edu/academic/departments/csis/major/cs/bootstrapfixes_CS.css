@@ -12,7 +12,6 @@
     flex-wrap: nowrap;
 }
 
-
 .secondary-nav .navbar 
 {
     display: block;
@@ -28,28 +27,78 @@
     text-decoration: none;
 }
 
-body {
-    background-color: #f8f9fa; /* Light gray background for better contrast */
+.background  {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    background: url(https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/promoImage-02.jpg) no-repeat  center/cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 100vh; /* Ensures full viewport height */
 }
 
-.container {
-    max-width: fit-content; /* Adjust the width of the container */
-    margin: auto; /* Center the content */
+/* Ensure the text container is properly centered */
+.top-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
+    width: 95%; /* Increase width to take more space */
+    max-width: 1200px; /* Set a maximum width for large screens */
+    text-align: left;
 }
-    
-.accordion {
-    width: 100%; 
+
+
+.bradley-color-button{
+    color: #f2f2f2;
+    background-color: #a50000;
+    text-decoration: none;
+    border: 1px solid #f2f2f2;
 }
-    
-.accordion-button,
+
+.accordion-item:first-child {
+    border-top: none !important;
+}
+
 .accordion-button:not(.collapsed) {
-    background-color: red !important;
-    color: white !important;
-    font-size: 1.25rem !important;
-    font-weight: bold !important;
+    color: #f2f2f2;
+    background-color: #a50000;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
-    
-.accordion-button:hover {
-    background-color: rgb(200, 0, 0) !important;
+
+.center{
+    text-align: center;
 }
-    
+
+.table-padding{
+    padding: 20px 20px 20px 20px;
+}
+
+table{
+    border-spacing: 5;
+}
+th{
+    background-color: #a50000;
+    color: #f2f2f2;
+    border: solid 1px black;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+td{
+    border: solid 1px black;
+    padding: 10px 10px 10px 10px;
+}
+
+table{
+    width: 100%;
+}
+
+.accordion-header{
+    font-size: 16px;
+}
+
+.footer {
+    bottom:auto;
+}
