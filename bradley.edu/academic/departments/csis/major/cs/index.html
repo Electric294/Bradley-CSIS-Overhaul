@@ -65,6 +65,33 @@
     z-index: 1;
 }
 
+/* Ensure the main content is above the white bar */
+#main-content {
+    position: relative;
+    z-index: 10; /* Higher z-index than the white bar */
+    background: rgba(255, 255, 255, 0.95); /* Ensure visibility */
+}
+
+/* Remove potential white bar overlap */
+.row-color-bWhite {
+    z-index: 10; /* Lower z-index than the main content */
+    position: relative; 
+    background: transparent; /* Make sure it doesn't cover content */
+}
+
+/* Ensure consistent spacing */
+#main-content .container {
+    margin: 0 auto;
+    padding: 0 15px; /* Add padding for better spacing */
+}
+
+/* Adjust section visibility */
+.row-color-bWhite {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
 
 </style>
 
@@ -690,9 +717,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div><!-- stickyNav -->
     <!-- end STICKY NAVIGATION -->
     <!-- BASIC PAGE NAVIGATION BAR -->
-    <div class="secondary-nav navbar-default">
+    <div class="secondary-nav navbar-default" style="padding:10px 100px 10px 150px">
         <div class="container">
-            <nav class="navbar">
+            <nav class="navbar" style="z-index: 20;">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -701,7 +728,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </button>
                     
                                     
-                                                          <a class="navbar-brand" href="https://bradley.edu/academic/departments/csis"><i class="fas fa-home icons-padding"></i> <span class="text-uppercase secondary-nav-title">Computer Science and Information Systems</span></a>
+                                                          <a class="navbar-brand" href="https://bradley.edu/academic/departments/csis"><i style="padding:20px 10px" class="fas fa-home icons-padding"></i> <span class="text-uppercase secondary-nav-title">Computer Science and Information Systems</span></a>
                                                                                                                                                                                 
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -758,7 +785,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                                    
     <!-- BASIC PAGE BREADCRUMBS -->
-    <div class="row-color-bWhite row-padding-breadcrumbs">
+    <div class="row-color-bWhite row-padding-breadcrumbs" style="padding:125px; margin-bottom: 100px">
         <div class="container">
             <div class="row">
             <ol class="breadcrumb">
@@ -776,9 +803,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- end BASIC PAGE BREADCRUMBS -->
 <div id="main-content">
     <!-- BASIC PAGE SECTION -->
-    <div class="row-color-bWhite row-padding-below-breadcrumbs background">
+    <div class="row-color-bWhite row-padding-below-breadcrumbs background" >
         <div class="container top-content">
-            <div class="row">
+            <div class="row" style="margin: 100px;">
                 <div class="col-md-12" style="margin: 15px">
                     
 
