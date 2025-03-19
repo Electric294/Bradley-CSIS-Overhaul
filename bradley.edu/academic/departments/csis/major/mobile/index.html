@@ -23,7 +23,15 @@
 
 <link rel="canonical" href="index.html" />
 
+<style>
+    .list-unstyled li::before {
+        content: none !important; /* Removes any unwanted pseudo-element */
+    }
+    .container {
+    max-width: 100% !important;
+}
 
+</style>
 
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -393,18 +401,198 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="col-md-6 col-md-offset-6">
                         <nav class="red-navbar">
                             <ul class="nav navbar-nav pull-right text-uppercase">
-                                <li class="nav-apply"><a href="https://bradley.edu/apply/"><i class="fas fa-file-alt" aria-hidden="true"></i> Apply</a></li>
-                                <li class="nav-visit"><a href="https://bradley.edu/admissions/freshman/visit/"><i class="fas fa-car" aria-hidden="true"></i> Visit</a></li>
-                                <li class="nav-give"><a href="https://bradley.edu/giving/"><i class="fas fa-gift" aria-hidden="true"></i> Give</a></li>
-                                <li class="top-audience"><a href="#" title="Audience"><span class="sr-only">Audience</span> <i class="fas fa-lg fa-users" aria-hidden="true"></i></a></li>
-                                <li class="top-tools"><a href="#" title="Tools"><span class="sr-only">Tools</span> <i class="fas fa-lg fa-th" aria-hidden="true"></i></a></li>
-                                <li class="top-search"><a href="#" title="Search"><span class="sr-only">Search</span> <i class="fas fa-lg fa-search" aria-hidden="true"></i></a></li>
+                                <ul class="nav navbar-nav pull-right text-uppercase">
+                                    <li class="nav-apply"><a href="https://bradley.edu/apply/"><i class="fas fa-file-alt" aria-hidden="true"></i> Apply</a></li>
+                                    <li class="nav-visit"><a href="https://bradley.edu/admissions/freshman/visit/"><i class="fas fa-car" aria-hidden="true"></i> Visit</a></li>
+                                    <li class="nav-give"><a href="https://bradley.edu/giving/"><i class="fas fa-gift" aria-hidden="true"></i> Give</a></li>
+                                    <li class="top-audience"><a href="#" title="Audience"><span class="sr-only">Audience</span> <i class="fas fa-lg fa-users" aria-hidden="true"></i></a></li>
+                                    <li class="top-tools"><a href="#" title="Tools"><span class="sr-only">Tools</span> <i class="fas fa-lg fa-th" aria-hidden="true"></i></a></li>
+                                    <li class="top-search"><a href="#" title="Search"><span class="sr-only">Search</span> <i class="fas fa-lg fa-search" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div><!-- .col-md-7 -->
+                    </div><!-- .row -->
+                </div><!-- .container -->
+                <div class="top-tools-container">
+                    <div class="container">
+                        <div class="row">
+                            <nav>
+                                <ul class="nav nav-justified">
+                                    <li><a href="https://bradley.edu/atoz/"><i class="fas fa-list" aria-hidden="true"></i> A-Z Index</a></li>
+                                    <li><a href="https://bradley.edu/directory/"><i class="fas fa-phone" aria-hidden="true"></i> Directory</a></li>
+                                    <li><a href="https://bradley.edu/about/visiting/virtual_tour/"><i class="fas fa-map" aria-hidden="true"></i> Campus Map</a></li>
+                                    <li><a href="https://mail.bradley.edu/"><i class="far fa-envelope" aria-hidden="true"></i> BMail</a></li>
+                                    <li><a href="https://fsmail.bradley.edu/"><i class="fas fa-envelope" aria-hidden="true"></i> FSMail</a></li>
+                                    <li><a href="https://mybu.bradley.edu/"><i class="fas fa-desktop" aria-hidden="true"></i> MyBU</a></li>
+                                    <li><a href="https://learn.bradley.edu/"><i class="fas fa-chalkboard-teacher"></i> Canvas</a></li>
+                                    <!--<li><a href="https://sakaiarchive.bradley.edu/portal"><i class="far fa-clipboard" aria-hidden="true"></i> Sakai Archive</a></li>-->
+                                    <li><a href="https://sentry.bradley.edu/"><i class="fas fa-user-plus" aria-hidden="true"></i> Sentry</a></li>
+                                    <li><a href="https://mybradley.bradley.edu/"><i class="fas fa-laptop" aria-hidden="true"></i> MyBradley</a></li>
+                                </ul>
+                            </nav>
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .top-tools-container -->
+                <div class="top-search-container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-md-offset-6 col-lg-offset-0">
+                                <form method="get" action="https://bradley.edu/sitesearch/" id="siteSearch">
+                                    <label class="sr-only" for="search-site">
+                                        Welcome to Bradley, how can we help you?
+                                    </label>
+                                    <div class="input-group">
+                                        <input id="search-site" type="text" class="form-control" autocomplete="off" placeholder="Welcome to Bradley, how can we help you?" name="q" />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-light" type="submit">Go</button>
+                                        </span>
+                                    </div> <!-- .input-group -->
+                                </form>
+                            </div><!-- .col-md-4 -->
+                            <div class="col-md-8">
+                                <ul class="list-inline">
+                                    <li><h5 class="text-uppercase">Common Searches:</h5></li>
+                                    <li><a href="https://bradley.edu/offices/student/sfs/charges-payment/tuition-fees/"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Tuition</a></li>
+                                    <li><a href="https://bradley.edu/calendar/"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Calendar</a></li>
+                                    <li><a href="https://bradley.edu/offices/other/sfs/"><i class="far fa-money-bill-alt" aria-hidden="true"></i> Financial Aid</a></li>
+                                    <li><a href="https://bradley.edu/academic/classes/"><i class="far fa-list-alt" aria-hidden="true"></i> Schedule of Classes</a></li>
+                                    <li><a href="http://bradley.bncollege.com/"><i class="fas fa-book" aria-hidden="true"></i> Bookstore</a></li>
+                                </ul>
+                            </div><!-- .col-md-8 -->
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .top-search-container -->
+                <div class="top-audience-container">
+                    <div class="container">
+                        <div class="row">
+                            <nav>
+                                <ul class="nav nav-justified">
+                                    <li><a href="https://bradley.edu/admissions/"><i class="fas fa-child" aria-hidden="true"></i> Future Students</a></li>
+                                    <li><a href="https://bradley.edu/currentstudents/"><i class="fas fa-users-class" aria-hidden="true"></i> Current Students</a></li>
+                                    <li><a href="https://bradley.edu/parent/"><i class="fas fa-user-friends" aria-hidden="true"></i> Parents</a></li>
+                                    <li><a href="https://bradley.edu/facultyorstaff/"><i class="fas fa-university" aria-hidden="true"></i> Faculty/Staff</a></li>
+                                    <li><a href="https://bradley.edu/alumni/"><i class="fas fa-user-graduate" aria-hidden="true"></i> Alumni</a></li>
+                                </ul>
+                            </nav>
+                        </div><!-- .row -->
+                    </div><!-- .container -->
+                </div><!-- .top-audience-container -->
+            </div><!-- .header-top .header-primary -->
+                
+            <nav class="header-main header-transparent navbar navbar-fixed-top" role="navigation" id="slide-nav">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-toggle toggle-menu menu-right push-body visible-xs visible-sm hamburger is-closed" data-toggle="collapse" data-target="#slidemenu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="hamb-top"></span>
+                        <span class="hamb-middle"></span>
+                        <span class="hamb-bottom"></span>
+                    </a>
+                    <a class="navbar-brand main-logo" href="https://bradley.edu/" rel="home" title="Bradley University"><span class="sr-only">Bradley University</span> <img alt="Bradley University Logo" class="img-responsive" src="https://bradley.edu/asset/img/logo_v2.svg"></a>
+                    <a class="navbar-brand visible-xs visible-sm bradley-logo-link" href="https://bradley.edu/"><span class="sr-only">Bradley University</span><img alt="Bradley University Logo" class="bradley-logo" src="https://bradley.edu/asset/img/Bshield_rgb.svg"></a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="slidemenu">
+                    <ul class="nav navbar-nav text-uppercase">
+                        <li class="visible-sm visible-xs">
+                            <div class="mobile-nav-logo">
+                                <a href="https://bradley.edu/"><span class="sr-only">Bradley University</span><img alt="Bradley University Logo" class="bradley-logo" src="https://bradley.edu/asset/img/Bshield_rgb.svg"></a>
+                            </div>
+                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle text-center mobile-quicklinks-icon" data-toggle="dropdown" href="#" role="button"><span class="sr-only">Tools</span> <i class="fas fa-th fa-lg tools-btn"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://bradley.edu/atoz/"><i class="fas fa-list" aria-hidden="true"></i> A-Z Index</a></li>
+                                <li><a href="https://bradley.edu/directory/"><i class="fas fa-phone" aria-hidden="true"></i> Directory</a></li>
+                                <li><a href="https://bradley.edu/about/visiting/virtual_tour/"><i class="fas fa-map" aria-hidden="true"></i> Campus Map</a></li>
+                                <li><a href="https://mail.bradley.edu/"><i class="far fa-envelope" aria-hidden="true"></i> BMail</a></li>
+                                <li><a href="https://fsmail.bradley.edu/"><i class="fas fa-envelope" aria-hidden="true"></i> FSMail</a></li>
+                                <li><a href="https://mybu.bradley.edu/"><i class="fas fa-desktop" aria-hidden="true"></i> MyBU</a></li>
+                                <li><a href="https://learn.bradley.edu/"><i class="fas fa-chalkboard-teacher"></i> Canvas</a></li>
+                                <!--<li><a href="https://sakaiarchive.bradley.edu/portal"><i class="far fa-clipboard" aria-hidden="true"></i> Sakai Archive</a></li>-->
+                                <li><a href="https://sentry.bradley.edu/"><i class="fas fa-user-plus" aria-hidden="true"></i> Sentry</a></li>
+                                <li><a href="https://mybradley.bradley.edu/"><i class="fas fa-laptop" aria-hidden="true"></i> MyBradley</a></li>
                             </ul>
-                        </nav>
-                    </div><!-- .col-md-7 -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-            <div class="top-tools-container">
+                        </li>
+                        <div class="clearfix"></div>
+                        <li class="visible-sm visible-xs">
+                            <div class="mobile-search">
+                                <form method="get" action="https://bradley.edu/sitesearch/" id="siteSearch">
+                                    <label class="sr-only" for="search-site-2">Search Bradley.edu</label>
+                                    <div class="input-group">
+                                        <input id="search-site-2" type="text" class="form-control" autocomplete="off" placeholder="search Bradley.edu" name="q" />
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-bRed" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li><a href="https://bradley.edu/about/">About</a></li>
+                        <li><a href="https://bradley.edu/admissions/">Admission</a></li>
+                        <li><a href="https://bradley.edu/academic/">Academics</a></li>
+                        <li><a href="https://bradley.edu/campuslife/">Campus Life</a></li>
+                        <li><a href="https://bradley.edu/alumni/">Alumni</a></li>
+                        <li><a href="http://www.bradleybraves.com/">Athletics</a></li>
+                        <li class="visible-xs visible-sm dropdown">
+                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Information for <b class="caret"></b></a>
+                            <ul class="dropdown-menu nav-info-for">
+                                <li><a href="https://bradley.edu/admissions/"><i class="fas fa-child" aria-hidden="true"></i> Future Students</a></li>
+                                <li><a href="https://bradley.edu/currentstudents/"><i class="fas fa-users-class" aria-hidden="true"></i> Current Students</a></li>
+                                <li><a href="https://bradley.edu/parent/"><i class="fas fa-user-friends" aria-hidden="true"></i> Parents</a></li>
+                                <li><a href="https://bradley.edu/facultyorstaff/"><i class="fas fa-university" aria-hidden="true"></i> Faculty/Staff</a></li>
+                                <li><a href="https://bradley.edu/alumni/"><i class="fas fa-user-graduate" aria-hidden="true"></i> Alumni</a></li>
+                            </ul>
+                        </li>
+                        <li class="visible-xs visible-sm">
+                            <ul class="nav nav-mobile-action-items">
+                                <li class="col-xs-12">
+                                    <a class="btn btn-bRed" href="https://bradley.edu/apply/"><i class="far fa-file-alt" aria-hidden="true"></i> Apply</a>
+                                </li>
+                                <li class="col-xs-12">
+                                    <a class="btn btn-bRed" href="https://bradley.edu/admissions/freshman/visit/"><i class="fas fa-car" aria-hidden="true"></i> Visit</a>
+                                </li>
+                                <li class="col-xs-12">
+                                    <a class="btn btn-bRed" href="https://bradley.edu/giving/"><i class="fas fa-gift" aria-hidden="true"></i> Give</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        </header>
+        <!-- end MAIN MENU/MOBILE MENU -->
+        
+        <!-- STICKY NAVIGATION -->
+        <div class="stickyNav">
+            <div class="container-fluid row-color-bRed row-padding-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 shieldLogo">
+                            <a class="bradley-logo-link" href="https://bradley.edu/"><img class="bradley-logo" alt="Bradley University Shield Logo" src="https://bradley.edu/asset/img/Bshield_rgb.svg"></a>
+                        </div>
+                        <div class="col-md-9 stickyNavLinks">
+                            <ul class="list-inline text-uppercase">
+                                <li><a href="https://bradley.edu/about/">About</a></li>
+                                <li><a href="https://bradley.edu/admissions/">Admission</a></li>
+                                <li><a href="https://bradley.edu/academic/">Academics</a></li>
+                                <li><a href="https://bradley.edu/campuslife/">Campus Life</a></li>
+                                <li><a href="https://bradley.edu/alumni/">Alumni</a></li>
+                                <li><a href="http://www.bradleybraves.com/">Athletics</a></li>
+                            </ul>
+                        </div> <!-- col-md-9 stickyNavLinks -->
+                        <div class="col-md-2">
+                            <ul class="list-inline icon-only text-right">
+                                <li class="sticky-audience"><a href="#" title="Audience"><span class="sr-only">Audience</span> <i class="fas fa-lg fa-users" aria-hidden="true"></i></a></li>
+                                <li class="sticky-tools"><a href="#" title="Tools"><span class="sr-only">Tools</span> <i class="fas fa-lg fa-th" aria-hidden="true"></i></a></li>
+                                <li class="sticky-search"><a href="#" title="Search"><span class="sr-only">Search</span> <i class="fas fa-lg fa-search" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div><!--col-md-2-->
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- container-fluid row-color-bRed row-padding-sm -->
+            <div class="sticky-tools-container">
                 <div class="container">
                     <div class="row">
                         <nav>
@@ -423,23 +611,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </nav>
                     </div><!-- .row -->
                 </div><!-- .container -->
-            </div><!-- .top-tools-container -->
-            <div class="top-search-container">
+            </div><!-- .sticky-tools-container -->
+            <div class="sticky-search-container">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-md-offset-6 col-lg-offset-0">
                             <form method="get" action="https://bradley.edu/sitesearch/" id="siteSearch">
-                                <label class="sr-only" for="search-site">
-                                    Welcome to Bradley, how can we help you?
-                                </label>
-                                <div class="input-group">
-                                    <input id="search-site" type="text" class="form-control" autocomplete="off" placeholder="welcome to Bradley, how can we help you?" name="q" />
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-light" type="submit">Go</button>
-                                    </span>
-                                </div> <!-- .input-group -->
+                                <label class="sr-only" for="search-site-sticky">welcome to Bradley, how can we help you?</label>
+                                  <div class="input-group">
+                                    <input id="search-site-sticky" type="text" class="form-control" autocomplete="off" placeholder="welcome to Bradley, how can we help you?" name="q" />
+                                    <span class="input-group-btn"><button class="btn btn-light" type="submit">Go</button></span>
+                                  </div> <!-- .input-group -->
                             </form>
-                        </div><!-- .col-md-4 -->
+                        </div> <!-- .col-md-4 -->
                         <div class="col-md-8">
                             <ul class="list-inline">
                                 <li><h5 class="text-uppercase">Common Searches:</h5></li>
@@ -449,11 +633,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li><a href="https://bradley.edu/academic/classes/"><i class="far fa-list-alt" aria-hidden="true"></i> Schedule of Classes</a></li>
                                 <li><a href="http://bradley.bncollege.com/"><i class="fas fa-book" aria-hidden="true"></i> Bookstore</a></li>
                             </ul>
-                        </div><!-- .col-md-8 -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
-            </div><!-- .top-search-container -->
-            <div class="top-audience-container">
+                        </div> <!-- .col-md-8 -->
+                    </div> <!-- .row -->
+                </div> <!-- .container -->
+            </div> <!-- .sticky-search-container -->
+            <div class="sticky-audience-container">
                 <div class="container">
                     <div class="row">
                         <nav>
@@ -467,243 +651,69 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </nav>
                     </div><!-- .row -->
                 </div><!-- .container -->
-            </div><!-- .top-audience-container -->
-        </div><!-- .header-top .header-primary -->
-            
-        <nav class="header-main header-transparent navbar navbar-fixed-top" role="navigation" id="slide-nav">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-toggle toggle-menu menu-right push-body visible-xs visible-sm hamburger is-closed" data-toggle="collapse" data-target="#slidemenu">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="hamb-top"></span>
-                    <span class="hamb-middle"></span>
-                    <span class="hamb-bottom"></span>
-                </a>
-                <a class="navbar-brand main-logo" href="https://bradley.edu/" rel="home" title="Bradley University"><span class="sr-only">Bradley University</span> <img alt="Bradley University Logo" class="img-responsive" src="https://bradley.edu/asset/img/logo_v2.svg"></a>
-                <a class="navbar-brand visible-xs visible-sm bradley-logo-link" href="https://bradley.edu/"><span class="sr-only">Bradley University</span><img alt="Bradley University Logo" class="bradley-logo" src="https://bradley.edu/asset/img/Bshield_rgb.svg"></a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="slidemenu">
-                <ul class="nav navbar-nav text-uppercase">
-                    <li class="visible-sm visible-xs">
-                        <div class="mobile-nav-logo">
-                            <a href="https://bradley.edu/"><span class="sr-only">Bradley University</span><img alt="Bradley University Logo" class="bradley-logo" src="https://bradley.edu/asset/img/Bshield_rgb.svg"></a>
-                        </div>
-                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle text-center mobile-quicklinks-icon" data-toggle="dropdown" href="#" role="button"><span class="sr-only">Tools</span> <i class="fas fa-th fa-lg tools-btn"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="https://bradley.edu/atoz/"><i class="fas fa-list" aria-hidden="true"></i> A-Z Index</a></li>
-                            <li><a href="https://bradley.edu/directory/"><i class="fas fa-phone" aria-hidden="true"></i> Directory</a></li>
-                            <li><a href="https://bradley.edu/about/visiting/virtual_tour/"><i class="fas fa-map" aria-hidden="true"></i> Campus Map</a></li>
-                            <li><a href="https://mail.bradley.edu/"><i class="far fa-envelope" aria-hidden="true"></i> BMail</a></li>
-                            <li><a href="https://fsmail.bradley.edu/"><i class="fas fa-envelope" aria-hidden="true"></i> FSMail</a></li>
-                            <li><a href="https://mybu.bradley.edu/"><i class="fas fa-desktop" aria-hidden="true"></i> MyBU</a></li>
-                            <li><a href="https://learn.bradley.edu/"><i class="fas fa-chalkboard-teacher"></i> Canvas</a></li>
-                            <!--<li><a href="https://sakaiarchive.bradley.edu/portal"><i class="far fa-clipboard" aria-hidden="true"></i> Sakai Archive</a></li>-->
-                            <li><a href="https://sentry.bradley.edu/"><i class="fas fa-user-plus" aria-hidden="true"></i> Sentry</a></li>
-                            <li><a href="https://mybradley.bradley.edu/"><i class="fas fa-laptop" aria-hidden="true"></i> MyBradley</a></li>
-                        </ul>
-                    </li>
-                    <div class="clearfix"></div>
-                    <li class="visible-sm visible-xs">
-                        <div class="mobile-search">
-                            <form method="get" action="https://bradley.edu/sitesearch/" id="siteSearch">
-                                <label class="sr-only" for="search-site-2">Search Bradley.edu</label>
-                                <div class="input-group">
-                                    <input id="search-site-2" type="text" class="form-control" autocomplete="off" placeholder="search Bradley.edu" name="q" />
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-bRed" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
-                    </li>
-                    <li><a href="https://bradley.edu/about/">About</a></li>
-                    <li><a href="https://bradley.edu/admissions/">Admission</a></li>
-                    <li><a href="https://bradley.edu/academic/">Academics</a></li>
-                    <li><a href="https://bradley.edu/campuslife/">Campus Life</a></li>
-                    <li><a href="https://bradley.edu/alumni/">Alumni</a></li>
-                    <li><a href="http://www.bradleybraves.com/">Athletics</a></li>
-                    <li class="visible-xs visible-sm dropdown">
-                        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">Information for <b class="caret"></b></a>
-                        <ul class="dropdown-menu nav-info-for">
-                            <li><a href="https://bradley.edu/admissions/"><i class="fas fa-child" aria-hidden="true"></i> Future Students</a></li>
-                            <li><a href="https://bradley.edu/currentstudents/"><i class="fas fa-users-class" aria-hidden="true"></i> Current Students</a></li>
-                            <li><a href="https://bradley.edu/parent/"><i class="fas fa-user-friends" aria-hidden="true"></i> Parents</a></li>
-                            <li><a href="https://bradley.edu/facultyorstaff/"><i class="fas fa-university" aria-hidden="true"></i> Faculty/Staff</a></li>
-                            <li><a href="https://bradley.edu/alumni/"><i class="fas fa-user-graduate" aria-hidden="true"></i> Alumni</a></li>
-                        </ul>
-                    </li>
-                    <li class="visible-xs visible-sm">
-                        <ul class="nav nav-mobile-action-items">
-                            <li class="col-xs-12">
-                                <a class="btn btn-bRed" href="https://bradley.edu/apply/"><i class="far fa-file-alt" aria-hidden="true"></i> Apply</a>
-                            </li>
-                            <li class="col-xs-12">
-                                <a class="btn btn-bRed" href="https://bradley.edu/admissions/freshman/visit/"><i class="fas fa-car" aria-hidden="true"></i> Visit</a>
-                            </li>
-                            <li class="col-xs-12">
-                                <a class="btn btn-bRed" href="https://bradley.edu/giving/"><i class="fas fa-gift" aria-hidden="true"></i> Give</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    </header>
-    <!-- end MAIN MENU/MOBILE MENU -->
-    
-    <!-- STICKY NAVIGATION -->
-    <div class="stickyNav">
-        <div class="container-fluid row-color-bRed row-padding-sm">
+            </div><!-- .sticky-audience-container -->
+        </div><!-- stickyNav -->
+        <!-- end STICKY NAVIGATION -->
+        <!-- BASIC PAGE NAVIGATION BAR -->
+        <div class="secondary-nav navbar-default">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-1 shieldLogo">
-                        <a class="bradley-logo-link" href="https://bradley.edu/"><img class="bradley-logo" alt="Bradley University Shield Logo" src="https://bradley.edu/asset/img/Bshield_rgb.svg"></a>
-                    </div>
-                    <div class="col-md-9 stickyNavLinks">
-                        <ul class="list-inline text-uppercase">
-                            <li><a href="https://bradley.edu/about/">About</a></li>
-                            <li><a href="https://bradley.edu/admissions/">Admission</a></li>
-                            <li><a href="https://bradley.edu/academic/">Academics</a></li>
-                            <li><a href="https://bradley.edu/campuslife/">Campus Life</a></li>
-                            <li><a href="https://bradley.edu/alumni/">Alumni</a></li>
-                            <li><a href="http://www.bradleybraves.com/">Athletics</a></li>
-                        </ul>
-                    </div> <!-- col-md-9 stickyNavLinks -->
-                    <div class="col-md-2">
-                        <ul class="list-inline icon-only text-right">
-                            <li class="sticky-audience"><a href="#" title="Audience"><span class="sr-only">Audience</span> <i class="fas fa-lg fa-users" aria-hidden="true"></i></a></li>
-                            <li class="sticky-tools"><a href="#" title="Tools"><span class="sr-only">Tools</span> <i class="fas fa-lg fa-th" aria-hidden="true"></i></a></li>
-                            <li class="sticky-search"><a href="#" title="Search"><span class="sr-only">Search</span> <i class="fas fa-lg fa-search" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div><!--col-md-2-->
-                </div><!-- row -->
-            </div><!-- container -->
-        </div><!-- container-fluid row-color-bRed row-padding-sm -->
-        <div class="sticky-tools-container">
-            <div class="container">
-                <div class="row">
-                    <nav>
-                        <ul class="nav nav-justified">
-                            <li><a href="https://bradley.edu/atoz/"><i class="fas fa-list" aria-hidden="true"></i> A-Z Index</a></li>
-                            <li><a href="https://bradley.edu/directory/"><i class="fas fa-phone" aria-hidden="true"></i> Directory</a></li>
-                            <li><a href="https://bradley.edu/about/visiting/virtual_tour/"><i class="fas fa-map" aria-hidden="true"></i> Campus Map</a></li>
-                            <li><a href="https://mail.bradley.edu/"><i class="far fa-envelope" aria-hidden="true"></i> BMail</a></li>
-                            <li><a href="https://fsmail.bradley.edu/"><i class="fas fa-envelope" aria-hidden="true"></i> FSMail</a></li>
-                            <li><a href="https://mybu.bradley.edu/"><i class="fas fa-desktop" aria-hidden="true"></i> MyBU</a></li>
-                            <li><a href="https://learn.bradley.edu/"><i class="fas fa-chalkboard-teacher"></i> Canvas</a></li>
-                            <!--<li><a href="https://sakaiarchive.bradley.edu/portal"><i class="far fa-clipboard" aria-hidden="true"></i> Sakai Archive</a></li>-->
-                            <li><a href="https://sentry.bradley.edu/"><i class="fas fa-user-plus" aria-hidden="true"></i> Sentry</a></li>
-                            <li><a href="https://mybradley.bradley.edu/"><i class="fas fa-laptop" aria-hidden="true"></i> MyBradley</a></li>
-                        </ul>
-                    </nav>
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .sticky-tools-container -->
-        <div class="sticky-search-container">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-md-offset-6 col-lg-offset-0">
-                        <form method="get" action="https://bradley.edu/sitesearch/" id="siteSearch">
-                            <label class="sr-only" for="search-site-sticky">welcome to Bradley, how can we help you?</label>
-                              <div class="input-group">
-                                <input id="search-site-sticky" type="text" class="form-control" autocomplete="off" placeholder="welcome to Bradley, how can we help you?" name="q" />
-                                <span class="input-group-btn"><button class="btn btn-light" type="submit">Go</button></span>
-                              </div> <!-- .input-group -->
-                        </form>
-                    </div> <!-- .col-md-4 -->
-                    <div class="col-md-8">
-                        <ul class="list-inline">
-                            <li><h5 class="text-uppercase">Common Searches:</h5></li>
-                            <li><a href="https://bradley.edu/offices/student/sfs/charges-payment/tuition-fees/"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Tuition</a></li>
-                            <li><a href="https://bradley.edu/calendar/"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Calendar</a></li>
-                            <li><a href="https://bradley.edu/offices/other/sfs/"><i class="far fa-money-bill-alt" aria-hidden="true"></i> Financial Aid</a></li>
-                            <li><a href="https://bradley.edu/academic/classes/"><i class="far fa-list-alt" aria-hidden="true"></i> Schedule of Classes</a></li>
-                            <li><a href="http://bradley.bncollege.com/"><i class="fas fa-book" aria-hidden="true"></i> Bookstore</a></li>
-                        </ul>
-                    </div> <!-- .col-md-8 -->
-                </div> <!-- .row -->
-            </div> <!-- .container -->
-        </div> <!-- .sticky-search-container -->
-        <div class="sticky-audience-container">
-            <div class="container">
-                <div class="row">
-                    <nav>
-                        <ul class="nav nav-justified">
-                            <li><a href="https://bradley.edu/admissions/"><i class="fas fa-child" aria-hidden="true"></i> Future Students</a></li>
-                            <li><a href="https://bradley.edu/currentstudents/"><i class="fas fa-users-class" aria-hidden="true"></i> Current Students</a></li>
-                            <li><a href="https://bradley.edu/parent/"><i class="fas fa-user-friends" aria-hidden="true"></i> Parents</a></li>
-                            <li><a href="https://bradley.edu/facultyorstaff/"><i class="fas fa-university" aria-hidden="true"></i> Faculty/Staff</a></li>
-                            <li><a href="https://bradley.edu/alumni/"><i class="fas fa-user-graduate" aria-hidden="true"></i> Alumni</a></li>
-                        </ul>
-                    </nav>
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .sticky-audience-container -->
-    </div><!-- stickyNav -->
-    <!-- end STICKY NAVIGATION -->
-    <!-- BASIC PAGE NAVIGATION BAR -->
-    <div class="secondary-nav navbar-default">
-        <div class="container">
-            <nav class="navbar">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                                    
-                                                          <a class="navbar-brand" href="https://bradley.edu/academic/departments/csis"><span class="glyphicon glyphicon-home icons-padding"></span> <span class="text-uppercase secondary-nav-title">Computer Science and Information Systems</span></a>
-                                                                                                                                                                                
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    
+                <nav class="navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
                                         
-
-<ul class="nav navbar-nav">
-          <li class="dropdown"><a href='../index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Major <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-                      <li><a href='../cs/index.html'  >Computer Science</a></li>
-                      <li><a href='../cis/index.html'  >Computer Information Systems</a></li>
-                      <li><a href='../cgt/index.html'  >Concentration in Computer Game Technology</a></li>
-                      <li><a href='../data/index.html'  >Concentration in Data Science</a></li>
-                      <li><a href='index.html'  >Concentration in Mobile Computing</a></li>
-                      <li><a href='../security/index.html'  >Concentration In Software, Web, And Computer Security</a></li>
-                  </ul>
-    </li>
-              <li class="dropdown"><a href='../../minor/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Minor <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-                      <li><a href='../../minor/cgt/index.html'  >Computer Game Technology</a></li>
-                      <li><a href='../../minor/csis/index.html'  >Computer Science and Information Systems</a></li>
-                      <li><a href='../../minor/ds/index.html'  >Data Science</a></li>
-                  </ul>
-    </li>
-              <li class="dropdown"><a href='../../gradprograms/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Graduate Programs <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-                      <li><a href='../../gradprograms/cs/index.html'  >Masters In Computer Science</a></li>
-                      <li><a href='https://info.online.bradley.edu/ms-in-cs-programs/computational-data-science-certificate'  target="_blank"  >Certificate in Computational Data Science (Online)</a></li>
-                      <li><a href='https://info.online.bradley.edu/ms-in-cs-programs/master-computer-science'  target="_blank"  >Masters In Computer Science (Online)</a></li>
-                      <li><a href='../../gradprograms/cis/index.html'  >Masters In Computer Information Systems</a></li>
-                      <li><a href='../../gradprograms/dsacdsc/index.html'  >Masters In Data Science And Analytics-Computational Data Science</a></li>
-                      <li><a href='../../gradprograms/cgt/index.html'  >Concentration In Computer Game Technology</a></li>
-                      <li><a href='../../gradprograms/cm/index.html'  >Concentration In Computing Management</a></li>
-                      <li><a href='../../gradprograms/emerging/index.html'  >Concentration In Emerging Topics in CS/CIS</a></li>
-                      <li><a href='../../gradprograms/isddm/index.html'  >Concentration In Data Science</a></li>
-                      <li><a href='../../gradprograms/mc/index.html'  >Concentration In Mobile Computing</a></li>
-                      <li><a href='../../gradprograms/se/index.html'  >Concentration In Software Engineering</a></li>
-                      <li><a href='../../gradprograms/swcs/index.html'  >Concentration In Cybersecurity</a></li>
-                      <li><a href='../../gradprograms/tcs/index.html'  >Concentration In Theoretical Computer Science</a></li>
-                      <li><a href='../../gradprograms/wts/index.html'  >Concentration In Web Technologies and Systems</a></li>
-                  </ul>
-    </li>
-              <li><a href='../../courses/index.html'  >Course Descriptions</a></li>
-              <li><a href='../../faculty/index.html'  >Faculty/Staff</a></li>
-              <li><a href='../../faqs/index.html'  >FAQs</a></li>
-              <li><a href='../../careers/index.html'  >Careers</a></li>
+                                                              <a class="navbar-brand" href="https://bradley.edu/academic/departments/csis"><a class="navbar-brand" href="https://bradley.edu/academic/departments/csis">
+                                                                <i class="fas fa-home icons-padding"></i> </span> <span class="text-uppercase secondary-nav-title">Computer Science and Information Systems</span></a>
+                                                                                                                                                                                    
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        
+                                            
+    
+    <ul class="nav navbar-nav">
+              <li class="dropdown"><a href='../index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Major </a>
+            <ul class="dropdown-menu">
+                          <li><a href='../cs/index.html'  >Computer Science</a></li>
+                          <li><a href='../cis/index.html'  >Computer Information Systems</a></li>
+                          <li><a href='../cgt/index.html'  >Concentration in Computer Game Technology</a></li>
+                          <li><a href='index.html'  >Concentration in Data Science</a></li>
+                          <li><a href='../mobile/index.html'  >Concentration in Mobile Computing</a></li>
+                          <li><a href='../security/index.html'  >Concentration In Software, Web, And Computer Security</a></li>
+                      </ul>
+        </li>
+                  <li class="dropdown"><a href='../../minor/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Minor</a>
+            <ul class="dropdown-menu">
+                          <li><a href='../../minor/cgt/index.html'  >Computer Game Technology</a></li>
+                          <li><a href='../../minor/csis/index.html'  >Computer Science and Information Systems</a></li>
+                          <li><a href='../../minor/ds/index.html'  >Data Science</a></li>
+                      </ul>
+        </li>
+                  <li class="dropdown"><a href='../../gradprograms/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Graduate Programs</span></a>
+            <ul class="dropdown-menu">
+                          <li><a href='../../gradprograms/cs/index.html'  >Masters In Computer Science</a></li>
+                          <li><a href='https://info.online.bradley.edu/ms-in-cs-programs/computational-data-science-certificate'  target="_blank"  >Certificate in Computational Data Science (Online)</a></li>
+                          <li><a href='https://info.online.bradley.edu/ms-in-cs-programs/master-computer-science'  target="_blank"  >Masters In Computer Science (Online)</a></li>
+                          <li><a href='../../gradprograms/cis/index.html'  >Masters In Computer Information Systems</a></li>
+                          <li><a href='../../gradprograms/dsacdsc/index.html'  >Masters In Data Science And Analytics-Computational Data Science</a></li>
+                          <li><a href='../../gradprograms/cgt/index.html'  >Concentration In Computer Game Technology</a></li>
+                          <li><a href='../../gradprograms/cm/index.html'  >Concentration In Computing Management</a></li>
+                          <li><a href='../../gradprograms/emerging/index.html'  >Concentration In Emerging Topics in CS/CIS</a></li>
+                          <li><a href='../../gradprograms/isddm/index.html'  >Concentration In Data Science</a></li>
+                          <li><a href='../../gradprograms/mc/index.html'  >Concentration In Mobile Computing</a></li>
+                          <li><a href='../../gradprograms/se/index.html'  >Concentration In Software Engineering</a></li>
+                          <li><a href='../../gradprograms/swcs/index.html'  >Concentration In Cybersecurity</a></li>
+                          <li><a href='../../gradprograms/tcs/index.html'  >Concentration In Theoretical Computer Science</a></li>
+                          <li><a href='../../gradprograms/wts/index.html'  >Concentration In Web Technologies and Systems</a></li>
+                      </ul>
+        </li>
+                  <li><a href='../../courses/index.html'  >Course Descriptions</a></li>
+                  <li><a href='../../faculty/index.html'  >Faculty/Staff</a></li>
+                  <li><a href='../../faqs/index.html'  >FAQs</a></li>
+                  <li><a href='../../careers/index.html'  >Careers</a></li>
       </ul>
                     
                 </div>
@@ -768,7 +778,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           Required Courses - 9 hrs.
         </button>
       </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show">
+      <div id="collapseOne" class="accordion-collapse collapse">
         <div class="accordion-body">
             <table>
                 <thead>
@@ -805,7 +815,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             Elective Courses (choose one) - 3 hrs.
           </button>
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse show">
+        <div id="collapseTwo" class="accordion-collapse collapse">
           <div class="accordion-body">
             <table>
                 <thead>
@@ -882,39 +892,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="col-md-2">
                 <h5 class="text-uppercase">Information For</h5>
                 <ul class="list-unstyled">
-                    <li><a href="https://bradley.edu/admissions/">Prospective Students</a></li>
-                    <li><a href="https://bradley.edu/currentstudents/">Current Students</a></li>
-                    <li><a href="https://bradley.edu/facultyorstaff/">Faculty/Staff</a></li>
-                    <li><a href="https://bradley.edu/family/">Parents</a></li>
-                    <li><a href="https://bradley.edu/alumni/">Alumni</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/admissions/"> Prospective Students</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/currentstudents/"> Current Students</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/facultyorstaff/"> Faculty/Staff</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/family/"> Parents</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/alumni/"> Alumni</a></li>
                 </ul>
             </div><!--end footer 1st col-->
             <div class="col-md-2">
                 <h5 class="text-uppercase">Getting Around</h5>
                 <ul class="list-unstyled">
-                    <li><a href="https://bradley.edu/atoz/">A - Z index</a></li>
-                    <li><a href="https://bradley.edu/about/visiting/virtual_tour/">Campus Map</a></li>
-                    <li><a href="https://bradley.edu/parking/">Parking</a></li>
-                    <li><a href="https://bradley.edu/about/visiting/">Visit Information</a></li>
-                    <li><a href="https://www.youvisit.com/#/vte/?data-platform=v&data-inst=60105&data-image-width=100%&data-image-height=100%&" target="_blank">Virtual Tour</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/atoz/"> A - Z index</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/about/visiting/virtual_tour/"> Campus Map</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/parking/"> Parking</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/about/visiting/"> Visit Information</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://www.youvisit.com/#/vte/?data-platform=v&data-inst=60105&data-image-width=100%&data-image-height=100%&" target="_blank"> Virtual Tour</a></li>
                 </ul>
             </div><!--end footer 2nd col-->
             <div class="col-md-2">
                 <h5 class="text-uppercase">Public Safety</h5>
                 <ul class="list-unstyled">
-                    <li><a href="https://bradley.edu/emergency/">Emergency</a></li>
-                    <li><a href="https://bradley.edu/police/">Police Department</a></li>
-                    <li><a href="https://bradley.edu/offices/police/services/">Safety Cruiser</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/emergency/"> Emergency</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/police/"> Police Department</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/offices/police/services/"> Safety Cruiser</a></li>
                 </ul>
             </div><!--end footer 3rd col-->
             <div class="col-md-2">
                 <h5 class="text-uppercase">Campus Tools</h5>
                 <ul class="list-unstyled">
-                    <li><a href="https://mail.bradley.edu/">Bmail</a></li>
-                    <li><a href="https://fsmail.bradley.edu/">FSmail</a></li>
-                    <li><a href="https://learn.bradley.edu/">Canvas</a></li>
-                    <li><a href="https://mybu.bradley.edu/">MyBU</a></li>
-                    <li><a href="https://bradley.edu/directory/">Directory</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://mail.bradley.edu/"> Bmail</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://fsmail.bradley.edu/"> FSmail</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://learn.bradley.edu/"> Canvas</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://mybu.bradley.edu/"> MyBU</a></li>
+                    <li><i class="fas fa-chevron-right"></i><a href="https://bradley.edu/directory/"> Directory</a></li>
                 </ul>
             </div><!--end footer 4th col-->
             <div class="col-md-4 contact-table">
@@ -967,7 +977,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div><!--row row-color-charcoal-->
     <div class="row-color-charcoal copyright text-center row-padding-sm">
         <div class="container">
-            <p><span aria-hidden="true" class="glyphicon glyphicon-copyright-mark"></span> 2025 Bradley University | <a href="https://bradley.edu/legal/accessibility/">Accessibility</a> | <a href="https://bradley.edu/legal/privacy/">Privacy Policy</a> | <a href="https://bradley.edu/legal/nondiscrimination/">Non-Discrimination Statement</a> | <a href="https://bradley.edu/legal/consumerinfo/">Consumer Information</a> | <a href="https://bradley.edu/legal/complaint-resolution/">Student Complaint Resolution</a> | <a href="https://complaints.ibhe.org/" target="_blank">IBHE Online Complaint System</a></p>
+            <p>&copy; 2025 Bradley University | <a href="https://bradley.edu/legal/accessibility/">Accessibility</a> | <a href="https://bradley.edu/legal/privacy/">Privacy Policy</a> | <a href="https://bradley.edu/legal/nondiscrimination/">Non-Discrimination Statement</a> | <a href="https://bradley.edu/legal/consumerinfo/">Consumer Information</a> | <a href="https://bradley.edu/legal/complaint-resolution/">Student Complaint Resolution</a> | <a href="https://complaints.ibhe.org/" target="_blank">IBHE Online Complaint System</a></p>
         </div>
     </div>
 </footer>
