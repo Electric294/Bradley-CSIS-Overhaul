@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
-
 <!-- Mirrored from bradley.edu/academic/departments/csis/major/cs/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Mar 2025 20:47:44 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
 
+<head>
 
 <link rel="preconnect" href="https://www.googletagmanager.com/">
 <link rel="preconnect" href="https://connect.facebook.net/">
@@ -22,7 +21,9 @@
 
 <link rel="canonical" href="index.html" />
 
-
+<!-- Link to BootStrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -47,6 +48,8 @@
 
 <link rel="preload" href="https://bradley.edu/asset/fonts/glyphicons-halflings-regular.woff2" />
 
+
+
     <link rel="preload" href="https://bradley.edu/asset/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://bradley.edu/asset/css/bootstrap.min.css"></noscript> 
     <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:500,800">-->
@@ -58,6 +61,7 @@
             font-weight: 500;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preload" href="https://bradley.edu/asset/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://bradley.edu/asset/css/animate.css"></noscript><!-- for additional animation functions -->
     <link rel="preload" href="https://bradley.edu/asset/css/mainStyles.min.css?v=20210209064400" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -79,7 +83,11 @@
     <script defer src="https://bradley.edu/asset/js/hoverDropdown.js" type="text/javascript"></script><!-- navbar animations & other stuff -->
     <script defer src="https://bradley.edu/asset/js/jPushMenu.js" type="text/javascript"></script><!-- mobile nav push in -->
     <!--<script src="/asset/js/v2p.js" type="text/javascript"></script>--><!-- old mobile nav push in -->
+
+    <!--Extra CSS-->
+    <link rel="stylesheet" href="bootstrapfixes_CS.css">
     
+
     <!-- STICKY NAV JS -->
     <script type="text/javascript">
     (function($) {
@@ -384,7 +392,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="row">
                     
                     <div class="col-md-6 col-md-offset-6">
-                        <nav class="navbar">
+                        <nav class="red-navbar">
                             <ul class="nav navbar-nav pull-right text-uppercase">
                                 <li class="nav-apply"><a href="https://bradley.edu/apply/"><i class="fas fa-file-alt" aria-hidden="true"></i> Apply</a></li>
                                 <li class="nav-visit"><a href="https://bradley.edu/admissions/freshman/visit/"><i class="fas fa-car" aria-hidden="true"></i> Visit</a></li>
@@ -725,8 +733,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- end BASIC PAGE BREADCRUMBS -->
 <div id="main-content">
     <!-- BASIC PAGE SECTION -->
-    <div class="row-color-bWhite row-padding-below-breadcrumbs">
-        <div class="container">
+    <div class="row-color-bWhite row-padding-below-breadcrumbs background">
+        <div class="container top-content">
             <div class="row">
                 <div class="col-md-12">
                     
@@ -737,7 +745,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="row">
 <div class="col-md-7">
 <p>The computer science major prepares you for a career working as a network, systems or database administrator, programmer, software engineer, business or systems analyst and more.</p>
-<h2>Ready for Anything</h2>
+<h1 class="text-uppercase">Ready for Anything</h1>
 <p>Like an engineer, you learn how technology systems are designed, built and maintained. You gain a foundation in programming, systems, networking, databases and software engineering. Because it&rsquo;s focused on theory, you take more math and sciences than the related CIS degree.</p>
 <p>You have four routes to a CS degree. You can earn a general CS degree and customize electives to your career interests, or you can add a concentration in computer game technology, or software, web and computer security, or mobile computing. Computer game technology introduces you to game design and development. The security concentration shows you how to protect data and systems from cyber attacks. The mobile computing concentration strengthens your understanding of wireless networks and teaches you how to develop mobile applications. Additionally, you can earn a CS or CIS master&rsquo;s degree at Bradley.</p>
 <p>By the time you graduate, your experiences include:</p>
@@ -747,7 +755,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li>A yearlong senior project with a local business client</li>
 <li>Networking, career development and programming contests through the Association for Computing Machinery student chapter</li>
 </ul>
-<h2>Making your Mark</h2>
+<h1 class="text-uppercase">Making your Mark</h1>
 <p>Computer science majors are valuable in many business, financial or technical settings. Recent graduates have found jobs at Epic Systems, Microsoft, the New York Times and Sony. Others have attended graduate school at institutions such as Virginia Tech and Washington University in St. Louis.</p>
 </div>
 <div class="col-md-5">
@@ -762,71 +770,192 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<a href="https://bradley.edu/apply/"><i class="fal fa-file-alt fa-3x" aria-hidden="true"></i>Apply Now</a>
 	</div>
 </div>
-<h2 class="col-md-no-top-margin">Major Requirements</h2>
-<p><strong>Required Courses - 48-50 hrs.</strong></p>
-<ul>
-<li>CS 101: Introduction to Programming - 4 hrs.</li>
-<li>CS 102: Data Structures - 3 hrs.</li>
-<li>CS 200: Advanced Programming Concepts and Languages - 3 hrs.</li>
-<li>CS 210: Advanced Data Structures and Algorithms - 3 hrs.</li>
-<li>CS 215:&nbsp;Computability, Formal Languages, and Heuristics<span><span>&nbsp;</span>- 3 hrs.</span></li>
-<li>CS 220: Computer Architecture - 3 hrs.</li>
-<li>CS 321: Operating Systems - 3 hrs.</li>
-<li>CS 330: Net-Centric Computing - 3 hrs.</li>
-<li>CS 370: Database Management Systems - 3 hrs.</li>
-<li>CS 390: Introduction to Software Engineering - 3 hrs.</li>
-<li>CS 480: Social and Professional Issues in Computing - 2 hrs.</li>
-<li>CS 490: Capstone Project I - 3 hrs.</li>
-<li>CS 491: Capstone Project II - 1-3 hrs.</li>
-<li>*MTH 120: Discrete Mathematics - 3 hrs.</li>
-<li>*MTH 121: Calculus I - 4 hrs.</li>
-<li>*MTH 122: Calculus II - 4 hrs.</li>
-<li>MTH 325: Probability and Statistics I - 3 hrs.<br /><strong>or</strong> IME 311: Introduction to Engineering Statistical Methods - 3 hrs.<br /><strong>or</strong> QM 262: Quantitative Analysis I - 3 hrs.</li>
-</ul>
-<p style="font-size: 15px;">MTH 121 should be taken first, followed by MTH 122 then MTH 120.</p>
-<p><strong>Math Elective (choose one) - 3-4 hrs.</strong></p>
-<ul>
-<li>MTH 207: Elementary Linear Algebra With Applications - 3 hrs.</li>
-<li>MTH 223: Calculus III - 4 hrs.</li>
-<li>MTH 224: Elementary Differential Equations - 3 hrs.</li>
-<li>MTH 300: Topics for Middle School Math Teachers - 3 hrs.</li>
-<li>MTH 301: Combinatorics - 3 hrs.</li>
-<li>MTH 302: Introduction to Graph Theory - 3 hrs.</li>
-<li>MTH 305: Modern Geometry - 3 hrs.</li>
-<li>MTH 307: Linear Algebra - 3 hrs.</li>
-<li>MTH 310: Introduction to Number Theory - 3 hrs.</li>
-<li>MTH 325: Probability and Statistics I - 3 hrs.</li>
-<li>MTH 326: Probability and Statistics II - 3 hrs.</li>
-<li>MTH 335: Topics in Actuarial Science - 3 hrs.</li>
-<li>MTH 345: Differential Equations - 3 hrs.</li>
-<li>MTH 371: History of Mathematics - 3 hrs.</li>
-<li>MTH 390: Mathematical Modeling - 3 hrs.</li>
-<li>MTH 403: Complex Variables I - 3 hrs.</li>
-<li>MTH 404: Modern Algebra I - 3 hrs.</li>
-<li>MTH 405: Modern Algebra II - 3 hrs.</li>
-<li>MTH 406: Elementary Topology - 3 hrs.</li>
-<li>MTH 414: Partial Differential Equations - 3 hrs.</li>
-<li>MTH 420: Introduction to Analysis - 3 hrs.</li>
-<li>MTH 421: Advanced Calculus - 3 hrs.</li>
-<li>MTH 427: Applied Statistical Methods - 3 hrs.</li>
-<li>MTH 428: Topics in Applied Statistics - 3 hrs.</li>
-<li>MTH 435: Stochastic Processes - 3 hrs.</li>
-<li>MTH 490: Topics in Mathematics - 3 hrs.</li>
-<li>MTH 491: Directed Individual Studies in Mathematics - 1-16 hrs.</li>
-<li>MTH 494: Senior Project in Mathematics I - 0 hrs.</li>
-<li>MTH 495: Senior Project in Mathematics II - 3 hrs.</li>
-<li>MTH 501: Topics in Applied Mathematics I - 3 hrs.</li>
-<li>MTH 502: Topics in Applied Mathematics II - 3 hrs.</li>
-<li>MTH 510: Numerical Methods I - 3 hrs.</li>
-<li>MTH 511: Numerical Methods II - 3 hrs.</li>
-<li>MTH 514: Partial Differential Equations - 3 hrs.</li>
-</ul>
-<p>Science Courses</p>
-<ul>
-<li>8 semester hours of science: two courses, with laboratories, designated for science or engineering majors.</li>
-</ul>
+
+<h2 class="col-md-no-top-margin" style="text-align:center"><br>Major Requirements</h2>
+<div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2>
+        <button class="accordion-button  bradley-color-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+            <strong class="accordion-header">Required Courses - 48-50 hrs.</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">   
+            <table class="table-padding">
+                <tr>
+                    <th>Course Num</th>
+                    <th>Course Title</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center"><a href="../../courses/index.html#CS-101">CS 101</a></td>
+                    <td>Introduction to Programming</td>
+                    <td>4 hrs</td>
+                </tr>
+                <tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-102">CS 102</a></td>
+                    <td>Data Structures</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-200">CS 200</a></td>
+                    <td>Advanced Programming Concepts and Languages</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-210">CS 210</a></td>
+                    <td>Advanced Data Structures and Algorithms</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-215">CS 215</a></td>
+                    <td>Computability, Formal Languages, and Heuristics</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-220">CS 220</a></td>
+                    <td>Computer Architecture</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-321">CS 321</a></td>
+                    <td>Operating Systems</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-330">CS 330</a></td>
+                    <td>Net-Centric Computinges</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-370">CS 370</a></td>
+                    <td>Database Management Systems</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-390">CS 390</a></td>
+                    <td>Introduction to Software Engineering</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-480">CS 480</a></td>
+                    <td>Social and Professional Issues in Computing</td>
+                    <td>2 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-490">CS 490</a></td>
+                    <td>Capstone Project I</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#CS-491">CS 491</a></td>
+                    <td>Capstone Project II</td>
+                    <td>1-3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#MTH-120">MTH 120</a></td>
+                    <td>Discrete Mathematics</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#MTH-121">MTH 121</a></td>
+                    <td>Calculus I</td>
+                    <td>4 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#MTH-122">MTH 122</a></td>
+                    <td>Calculus II</td>
+                    <td>4 hrs</td>
+                </tr>
+				<tr>
+                    <td  style="text-align: center"><a href="../../courses/index.html#MTH-325">MTH 325</a></td>
+                    <td>Probability and Statistics I</td>
+                    <td>3 hrs</td>
+                </tr>
+				
+            </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2>
+        <button class="accordion-button collapsed   bradley-color-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <strong class="accordion-header">Math Elective (choose one) - 3-4 hrs.</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            <table>
+                <tr>
+                    <th>Course Num</th>
+                    <th>Course Title</th>
+                    <th>Hours</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center"><a href="../../courses/index.html#MTH-207">MTH 207</a></td>
+                    <td>Elementary Linear Algebra With Applications</td>
+                    <td>3 hrs</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center"><a href="../../courses/index.html#MTH-223">MTH 223</a></td>
+                    <td>Calculus III</td>
+                    <td>4 hrs</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center"><a href="../../courses/index.html#MTH-224">MTH 224</a></td>
+                    <td>Elementary Differential Equations</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td style="text-align: center"><a href="../../courses/index.html#MTH-301">MTH 301</a></td>
+                    <td>Combinatorics</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td style="text-align: center"><a href="../../courses/index.html#MTH-302">MTH 302</a></td>
+                    <td>Modern Geometry</td>
+                    <td>3 hrs</td>
+                </tr>
+				<tr>
+                    <td style="text-align: center"><a href="../../courses/index.html#MTH-305">MTH 305</a></td>
+                    <td>Modern Geometry</td>
+                    <td>3 hrs</td>
+                </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+	
+<div class="accordion-item">
+    <h2>
+        <button class="accordion-button collapsed bradley-color-button" type="button"
+            data-bs-toggle="collapse" 
+            data-bs-target="#panelsStayOpen-collapseThree" 
+            aria-expanded="false" 
+            aria-controls="panelsStayOpen-collapseThree">
+            <strong class="accordion-header">Science Courses - 8 hrs.</strong>
+        </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            <table class="table-padding">
+                <thead>
+                    <tr>
+                        <th>Requirement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8 semester hours of science: two courses, with laboratories, designated for science or engineering majors.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
-</div><style>
+
+  <style>
 @media (min-width: 768px) {
     .modal-dialog {
         margin-top: 80px;
