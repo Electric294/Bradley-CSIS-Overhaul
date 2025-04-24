@@ -642,7 +642,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div><!-- stickyNav -->
     <!-- end STICKY NAVIGATION -->
     <!-- BASIC PAGE MAIN IMAGE -->
-    <style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<style>
+    .hero-swiper {
+        height: 60vh;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /*
     .hero-bg {
         background-image: url(https://bradley.edu/contentAsset/image/b35c947a-abf7-4ff9-b999-aa14f4d785ab/fileAsset/filter/Resize,Jpeg/resize_w/320/jpeg_q/60);
     }
@@ -701,10 +712,47 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             background-image: url(https://bradley.edu/contentAsset/image/b35c947a-abf7-4ff9-b999-aa14f4d785ab/fileAsset/filter/Resize,Jpeg/resize_w/1920/jpeg_q/60);
         }
     }
-    </style>
-    <div class="hero-bg-wrapper-45vh">
-        <div class="hero-bg"></div>
+    */
+</style>
+
+<div class="hero-bg-wrapper-45vh">
+    <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/promoImage-01.jpg" alt="Image 1" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/promoImage-08.jpg" alt="Image 2" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.bradley.edu/offices/communications/pr/for-media/campus-photos/img/promoImage-09.jpg" alt="Image 3" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".hero-swiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+    
     <!-- end BASIC PAGE MAIN IMAGE -->
 
     <!-- BASIC PAGE NAVIGATION BAR -->
