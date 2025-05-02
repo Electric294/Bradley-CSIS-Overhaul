@@ -58,6 +58,8 @@
             font-weight: 500;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <link rel="preload" href="https://bradley.edu/asset/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <noscript><link rel="stylesheet" href="https://bradley.edu/asset/css/animate.css"></noscript><!-- for additional animation functions -->
     <link rel="preload" href="https://bradley.edu/asset/css/mainStyles.min.css?v=20210209064400" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -259,6 +261,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz
 
   gtag('config', 'G-V7221XPXLQ');
 </script>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="bootstrapFixes.css">
+    
 </head>
 
 <body id="no-image">
@@ -658,7 +663,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         
 
 <ul class="nav navbar-nav">
-          <li class="dropdown"><a href='../../major/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Major <span class="caret"></span></a>
+          <li class="dropdown"><a href='../../major/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Major </a>
         <ul class="dropdown-menu">
                       <li><a href='../../major/cs/index.html'  >Computer Science</a></li>
                       <li><a href='../../major/cis/index.html'  >Computer Information Systems</a></li>
@@ -668,14 +673,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <li><a href='../../major/security/index.html'  >Concentration In Software, Web, And Computer Security</a></li>
                   </ul>
     </li>
-              <li class="dropdown"><a href='../index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Minor <span class="caret"></span></a>
+              <li class="dropdown"><a href='../index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Minor </a>
         <ul class="dropdown-menu">
                       <li><a href='index.html'  >Computer Game Technology</a></li>
                       <li><a href='../csis/index.html'  >Computer Science and Information Systems</a></li>
                       <li><a href='../ds/index.html'  >Data Science</a></li>
                   </ul>
     </li>
-              <li class="dropdown"><a href='../../gradprograms/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Graduate Programs <span class="caret"></span></a>
+              <li class="dropdown"><a href='../../gradprograms/index.html' class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"  >Graduate Programs </a>
         <ul class="dropdown-menu">
                       <li><a href='../../gradprograms/cs/index.html'  >Masters In Computer Science</a></li>
                       <li><a href='https://info.online.bradley.edu/ms-in-cs-programs/computational-data-science-certificate'  target="_blank"  >Certificate in Computational Data Science (Online)</a></li>
@@ -725,8 +730,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- end BASIC PAGE BREADCRUMBS -->
 <div id="main-content">
     <!-- BASIC PAGE SECTION -->
-    <div class="row-color-bWhite row-padding-below-breadcrumbs">
-        <div class="container">
+    <div class="row-color-bWhite row-padding-below-breadcrumbs bg">
+        <div class="container overlay">
             <div class="row">
                 <div class="col-md-12">
                     
@@ -740,22 +745,98 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div class="col-md-5">
 <h2 style="margin-top: 0;">Minor Requirements</h2>
-<p>Required Courses - 19 hrs.</p>
-<ul>
-<li>CS 101: Introduction to Programming or equivalent - 4 hrs.</li>
-<li>CS 102: Data Structures or equivalent - 3 hrs.</li>
-<li>CS 200: Advanced Programming Concepts and Languages or equivalent - 3 hrs.</li>
-<li>CIS 350: Foundations of Game Programming or I M 289 Game Production I or equivalent - 3 hrs.</li>
-<li>CIS 450: Game Programming Design Patterns - 3 hrs.</li>
-<li>CIS 459 (or IM 459): Computer Game Capstone Project - 3 hrs.</li>
-</ul>
-<p>Elective courses (choose two 3 hrs. courses or one 6 hrs. course) - 6 hrs.</p>
-<ul>
-<li>CIS 451: Computer Game Design or I M 288 Game Design I - 3 hrs.</li>
-<li>I M 489: Advanced Game Capstone – 6 hrs.</li>
-<li>CIS 455 (or I M 455): Computer Graphics - 3 hrs.</li>
-<li>CIS 456: Game Engine Programming - 3 hrs.</li>
-</ul>
+<div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <span class="accordion-span">Required Courses&nbsp;-&nbsp;19 hours</span>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            <table>
+                <tr>
+                  <th>Course #</th>
+                  <th>Course Name</th>
+                  <th>Credit Hours</th>
+                </tr>
+                <tr>
+                    <td><a href="../../courses/index.html#CIS-101">CIS 101</a></td>
+                    <td>Introduction to Programming or equivalent</td>
+                    <td>4 hours</td>
+                  </tr>
+                  <tr>
+                    <td><a href="../../courses/index.html#CIS-102">CIS 102</a></td>
+                    <td>Data Structures or equivalent</td>
+                    <td>3 hours</td>
+                  </tr>
+                  <tr>
+                      <td><a href="../../courses/index.html#CIS-200">CIS 200</a> or<br /><a href="../../../im/courses/index.html#I-M-459">I M 459</a></td>
+                      <td>Advanced Programming Concepts and Languages or equivalent</td>
+                      <td>3 hours</td>
+                  </tr>
+                <tr>
+                  <td><a href="../../courses/index.html#CIS-350">CIS 350</a></td>
+                  <td>Foundations of Game Programming or <a href="../../../im/courses/index.html#I-M-289">I M 289</a> Game Production I or equivalent</td>
+                  <td>3 hours</td>
+                </tr>
+                <tr>
+                  <td><a href="../../courses/index.html#CIS-450">CIS 450</a></td>
+                  <td>Game Programming Design Patterns</td>
+                  <td>3 hours</td>
+                </tr>
+                <tr>
+                    <td><a href="../../courses/index.html#CIS-459">CIS 459</a> or<br /><a href="../../../im/courses/index.html#I-M-459">I M 459</a></td>
+                    <td>Computer Game Capstone Project</td>
+                    <td>3 hours</td>
+                </tr>
+            </table>  
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <span class="accordion-span">Elective Courses (choose two 3 hrs. courses or one 6 hrs. course)&nbsp;-&nbsp;6 hrs</span>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            <table>
+                <tr>
+                  <th>Course #</th>
+                  <th>Course Name</th>
+                  <th>Credit Hours</th>
+                </tr>
+                <tr>
+                  <td rowspan="2"><a href="../../courses/index.html#CIS-451">CIS 451</a> or<br /><a href="../../../im/courses/index.html#I-M-288">I M 288</a></td>
+                  <td>Computer Game Design</td>
+                  <td>3 hours</td>
+                </tr>
+                <tr>
+                    <td>Game Design I</td>
+                    <td>3 hours</td>
+                  </tr>
+                <tr>
+                  <td><a href="../../../im/courses/index.html#I-M-489">I M 489</a></td>
+                  <td>Game Programming Design Patterns</td>
+                  <td>3 hours</td>
+                </tr>
+                <tr>
+                    <td><a href="../../courses/index.html#CIS-455">CIS 455</a> or<br /><a href="../../../im/courses/index.html#I-M-455">I M 455</a></td>
+                    <td>Advanced Game Capstone</td>
+                    <td>3 hours</td>
+                </tr>
+                <tr>
+                    <td><a href="../../courses/index.html#CIS-456">CIS 456</a></td>
+                    <td>Game Engine Programming</td>
+                    <td>3 hours</td>
+                </tr>
+            </table> 
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 </div>
 
