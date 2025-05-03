@@ -1,0 +1,28 @@
+.profile-card {
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-color: gray;
+    overflow: hidden;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.profile-img-container {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    transition: all 0.3s ease;
+}
+.profile-card:hover .profile-img-container {
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+}
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.profile-card:hover .profile-img {
+    transform: scale(1.05);}
