@@ -5,7 +5,6 @@
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 
-
 <link rel="preconnect" href="https://www.googletagmanager.com/">
 <link rel="preconnect" href="https://connect.facebook.net/">
 <link rel="preconnect" href="https://mx.technolutions.net/">
@@ -47,8 +46,8 @@
 
 <link rel="preload" href="https://bradley.edu/asset/fonts/glyphicons-halflings-regular.woff2" />
 
-    <link rel="preload" href="https://bradley.edu/asset/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://bradley.edu/asset/css/bootstrap.min.css"></noscript> 
+    <link rel="preload" href="ds.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="ds.css"></noscript> 
     <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:500,800">-->
     <style type="text/css" media="screen">
         @font-face {
@@ -723,10 +722,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </div><!--row row-color-bWhite-->
     <!-- end BASIC PAGE BREADCRUMBS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
 <div id="main-content">
     <!-- BASIC PAGE SECTION -->
-    <div class="row-color-bWhite row-padding-below-breadcrumbs">
-        <div class="container">
+    <div class="row-color-bWhite row-padding-below-breadcrumbs background">
+        <div class="container overlay">
             <div class="row">
                 <div class="col-md-12">
                     
@@ -740,32 +742,110 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div class="col-md-5">
 <h2 style="margin-top: 0;">Minor Requirements</h2>
-<p>Required Courses - 25-26 hrs.</p>
-<ul>
-<li>CS 101: Introduction to Programming or equivalent - 4 hrs.</li>
-<li>CS 102: Data Structures or equivalent - 3 hrs.</li>
-<li>MTH 111: Elementary Statistics – 3 hrs.<br>
-or MTH 325: Probability and Statistics I – 3 hrs.<br>
-or QM 262: Quantitative Analysis I – 3 hrs.<br>
-or PSY 205: Quantitative Methods – 3 hrs.<br>
-or ECE 302: Probability, Statistics and Random Processes for EE – 3 hrs.<br>
-or IME 311: Introduction to Engineering Statistical Methods – 3 hrs.<br>
-or ENC 310: Statistical Procedures in Health Sciences or equivalent – 3 hrs.<br>
-or BIO 260 and 261: Biological Statistics I/II or equivalent- 3 hrs.</li>
-<li>MTH 120: Discrete Mathematics or equivalent – 3 hrs.<br>
-or MTH 115: Brief Calculus With Applications I – 4 hrs.<br>
-or MTH 121 Calculus I- 4 hrs.</li>
-<li>CS 360: Fundamentals of Data Science   - 3 hrs.</li>
-</ul>
-<p>Elective courses (choose three) - 9 hrs.</p>
-<ul>
-<li>CS 461: Artificial Intelligence - 3 hrs.</li>
-<li>CS 462: Machine Learning - 3 hrs.</li>
-<li>CS 463: Knowledge Discovery and Data Mining – 3 hrs.</li>
-<li>CS 370: Database Management Systems – 3 hrs.</li>
-<li>CS 472: Distributed Databases and Big Data – 3 hrs.</li>
-<li>CIS 476: Data Management – 3 hrs.</li>
-</ul>
+
+<div class="accordion accordion-flush" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header accordion">
+        <button style="text-align:left; font-size: 20px; font-family:sans-serif; background-color: #a50000; color: white; width: 460px;" class="accordion-button btn-lg bt-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Required Courses - 25-26 hrs.
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Course Name</th>
+                        <th>Credit Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-cscourses.dot#:~:text=CS%20101" target="_blank">CS101</a></td>
+                        <td><i>Introduction to Programming or equivalent</i></td>
+                        <td>4 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-cscourses.dot#:~:text=CS%20102" target="_blank">CS102</a></td>
+                        <td><i>Data Structures or equivalent</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-mthcourses.dot#:~:text=MTH%20111" target="_blank">MTH111</a> / <a href="https://www.bradley.edu/academic/undergradcat/20242025/las-mthcourses.dot#:~:text=MTH%20325" target="_blank">MTH325</a> / <a href="https://www.bradley.edu/academic/undergradcat/20242025/fcba-econcourses.dot#:~:text=Q%20M%20262%20-%20Quantitative" target="_blank">QM262</a> /  
+                            <a href="https://www.bradley.edu/academic/undergradcat/20242025/las-psycourses.dot#:~:text=PSY%20205" target="_blank">PSY205</a> / <a href="https://www.bradley.edu/academic/undergradcat/20242025/egt-eecourses.dot#:~:text=ECE%20302" target="_blank">ECE302</a> / <a href="https://www.bradley.edu/academic/undergradcat/20242025/egt-imecourses.dot#:~:text=IME%20311%20-%20" target="_blank">IME311</a> / 
+                            <a href="https://www.bradley.edu/academic/undergradcat/20242025/ehs-hscourses.dot#:~:text=KHS%20310" target="_blank">KHS310</a> / <a href="https://www.bradley.edu/academic/undergradcat/20242025/las-biocourses.dot#:~:text=BIO%20260" target="_blank">BIO260 and 261</a></td>
+                        <td><i>Elementary Statistics / Probability and Statistics I / Quantitative Analysis I / Quantitative Methods / Probability, Statistics and Random Processes for EE / Introduction to Engineering Statistical Methods / Statistical Procedures in Health Sciences or equivalent / Biological Statistics I and II or equivalent</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-mthcourses.dot#:~:text=MTH%20120" target="_blank">MTH120</a> / <a href="https://www.bradley.edu/academic/undergradcat/20242025/las-mthcourses.dot#:~:text=MTH%20115" target="_blank">MTH115</a> / <a href="https://www.bradley.edu/academic/undergradcat/20242025/las-mthcourses.dot#:~:text=MTH%20121%20-%20Calculus%20I" target="_blank">MTH 121</a></td>
+                        <td><i>Discrete Mathematics or equivalent / Brief Calculus With Applications I / Calculus I</i></td>
+                        <td>3 hrs. / 4 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-cscourses.dot#:~:text=CS%20360" target="_blank">CS360</a></td>
+                        <td><i>Fundamentals of Data Science</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button style="text-align:left; font-size: 20px; font-family:sans-serif; background-color: #a50000; color: white; width: 460px;" class="accordion-button btn-lg bt-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Elective courses (choose three) - 9 hrs.
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Course Name</th>
+                        <th>Credit Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-cscourses.dot#:~:text=CS%20461" target="_blank">CS461</a></td>
+                        <td><i>Artificial Intelligence</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-cscourses.dot#:~:text=CS%20462" target="_blank">CS462</a></td>
+                        <td><i>Machine Learning</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-cscourses.dot#:~:text=CS%20463" target="_blank">CS463</a></td>
+                        <td><i>Knowledge Discovery and Data Mining</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-cscourses.dot#:~:text=CS%20370" target="_blank">CS370</a></td>
+                        <td><i>Database Management Systems</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-cscourses.dot#:~:text=CS%20472" target="_blank">CS472</a></td>
+                        <td><i>Distributed Databases and Big Data</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.bradley.edu/academic/undergradcat/20242025/las-ciscourses.dot#:~:text=CIS%20476" target="_blank">CIS476</a></td>
+                        <td><i>Data Management</i></td>
+                        <td>3 hrs.</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+</div> 
 </div>
 </div>
 
